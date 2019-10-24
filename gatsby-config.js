@@ -5,5 +5,15 @@
  */
 
 module.exports = {
-  /* Your site config here */
-}
+  plugins: [
+    'gatsby-plugin-typescript',
+    'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-typescript',
+      options: {
+        isTSX: true,
+        allExtensions: true
+      }
+    }
+  ]
+};
